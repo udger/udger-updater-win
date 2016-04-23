@@ -8,7 +8,7 @@ udger-updater.exe performs downloading of data files and other files (icons, CSV
 - Released under the GNU (LGPL v.3)
 
 ### Usage
-- download 
+- download [binaries](https://github.com/udger/udger-updater-win/blob/master/distribution/udger-updater.zip?raw=true) or build from project
 - set in configuration file (example conf includes)
 - run udger-updater.exe my.config
 - We recommend that you run udger-updater regularly (about once a day) using the Windows Task Scheduler

@@ -113,6 +113,12 @@ namespace udger_updater
                 procesFile(accessKey, "udgerdb_v3.dat", destination_directory, "udgerdb_v3_dat.md5");
             }
 
+            if (Convert.ToBoolean(ConfigurationManager.AppSettings["udgerdb_v3-noip.dat"]))
+            {
+                destination_directory = GetDestinationDirectory("udgerdb_v3-noip.dat", global_destination_directory);
+                procesFile(accessKey, "udgerdb_v3-noip.dat", destination_directory, "udgerdb_v3_dat-noip.md5");
+            }
+
             if (Convert.ToBoolean(ConfigurationManager.AppSettings["udgerdb.dat"]))
             {
                 destination_directory = GetDestinationDirectory("udgerdb.dat", global_destination_directory);
@@ -175,6 +181,11 @@ namespace udger_updater
             {
                 destination_directory = GetDestinationDirectory("uaDEVICE_example.csv", global_destination_directory);
                 procesFile(accessKey, "uaDEVICE_example.csv", destination_directory);
+            }
+            if (Convert.ToBoolean(ConfigurationManager.AppSettings["mac_address_vendors.csv"]))
+            {
+                destination_directory = GetDestinationDirectory("mac_address_vendors.csv", global_destination_directory);
+                procesFile(accessKey, "mac_address_vendors.csv", destination_directory);
             }
             #endregion
 

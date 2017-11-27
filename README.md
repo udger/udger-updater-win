@@ -5,7 +5,7 @@ udger-updater.exe performs downloading of data files and other files (icons, CSV
 - Written in C#
 - Easy configuration
 - Checking version and checksum datafile
-- Released under the GNU (LGPL v.3)
+- Released under the MIT
 
 ### Usage
 - download [binaries](https://github.com/udger/udger-updater-win/blob/master/distribution/udger-updater.zip?raw=true) or build from project
